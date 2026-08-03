@@ -1,0 +1,192 @@
+:root{
+    --blue_color: color: hsl(228, 45%, 44%);
+    --White: hsl(0, 0%, 100%);
+    --Stone100: hsl(30, 54%, 90%);
+    --Stone150: hsl(30, 18%, 87%);
+    --Stone600: hsl(30, 10%, 34%);
+    --Stone900: hsl(24, 5%, 18%);
+    --Brown800: hsl(14, 45%, 36%);
+    --Rose800: hsl(332, 51%, 32%);
+    --Rose50: hsl(330, 100%, 98%);
+    --fontfamily_young:"Young Serif", serif;
+    --fontfamily_outfit:"Outfit", sans-serif;
+}
+
+/* - Mobile: 375px
+- Desktop: 1440px 
+- Font size (paragraph): 16px
+*/
+*, *::after, *::before{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body,html{
+    width: 1440px;
+    height: 100%;
+    background: var(--Stone100);
+}
+p{
+    font-size: 16px;
+    font-family: var(--fontfamily_outfit);
+    color: var(--Stone600);
+}
+#parent{
+    width: 50%;
+    background: var(--White);
+    border-radius: 30px;
+    margin: 10% auto;
+    padding: 2%;
+    box-shadow: 0px 0px 10px black;
+}
+
+#parent img{
+    width: 96%;
+    margin: 10px auto;
+    display: block;
+    border-radius: 15px;   
+}
+#parent .content_div1{
+    border-bottom: 2px solid var(--Stone150);
+    margin: 20px 0;
+    padding: 10px 0;
+}
+#parent .content_div1 h1{
+    font-family: var(--fontfamily_young);
+    font-weight: 400;
+    color: var(--Stone900);
+}
+#parent .content_div1 p{
+    margin: 20px 0;
+}
+#parent .content_div1_child_preparation_time{
+    width:100%;
+    background: var(--Rose50);
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+.content_div1_child_preparation_time h3{
+font-family: var(--fontfamily_outfit);
+color: var(--Brown800);
+padding-bottom: 10px;
+}
+.content_div1_child_preparation_time ul{
+font-family: var(--fontfamily_outfit);
+font-size: 16px;
+}
+.content_div1_child_preparation_time ul li{
+list-style-position: inside;
+padding: 5px 5px;
+color: var(--Stone600);
+}
+.content_div1_child_preparation_time ul li span{
+    font-weight: 600;
+}
+#parent .content_div1_child_ingredients{
+    width:100%;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+.content_div1_child_ingredients h2{
+    font-family: var(--fontfamily_young);
+    font-weight: 400;
+    color: var(--Brown800);
+    padding-bottom: 10px;
+}
+.content_div1_child_ingredients ul{
+    font-family: var(--fontfamily_outfit);
+    font-size: 16px;
+}
+.content_div1_child_ingredients ul li{
+    list-style-position: inside;
+    padding: 5px 5px;
+    color: var(--Stone600);
+}
+.content_div1_child_ingredients ul li span{
+font-weight: 600;
+}
+
+.content_div2{
+    border-bottom: 2px solid var(--Stone150);
+    margin: 20px 0;
+    padding: 10px 0;
+}
+.content_div2 h2{
+   font-family: var(--fontfamily_young);
+   font-weight: 400;
+color: var(--Brown800);
+padding-bottom: 10px;
+}
+.content_div2 ol{
+font-family: var(--fontfamily_outfit);
+font-size: 16px;
+}
+.content_div2 ol li{
+list-style-position: inside;
+padding: 5px 5px;
+color: var(--Stone600);
+}
+.content_div2 ol li span{
+    font-weight: 600;
+}
+/* .content_div3{
+    color: var(--Brown800);
+} */
+.content_div3 h2{
+    color: var(--Brown800);
+    font-family: var(--fontfamily_young);
+    font-weight: 400;
+}
+.calories{
+    border-bottom: 2px solid var(--Stone150);
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+}
+.calories:last-child{
+    border-bottom: 0px solid var(--Stone150);
+}
+.calories  span{
+    color: var(--Brown800);
+    font-weight: 700;
+    display: block;
+    margin-right: 150px;
+}
+.attribution{
+    text-align: center;
+    font-size: 30px;
+    color:black;
+    
+}
+.attribution a{
+    color:black;
+   text-decoration: none;
+}
+
+/* Mobile */
+
+@media screen and (max-width:375px) {
+    body{
+        max-width: 375px;
+    }
+    #parent{
+    width: 90%;
+    background: var(--White);
+    border-radius: 10px;
+    margin: 10% auto;
+    padding: 2%;
+    box-shadow: 0px 0px 10px black;
+}
+
+#parent img{
+    width: 100%;
+    margin: 0;
+    border-radius: 10px;   
+}
+#parent .content_div1{
+    border-bottom: 2px solid var(--Stone150);
+    margin: 20px 0;
+    padding: 10px 0;
+}
+}
